@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+            | Remote Control |
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .image{
+                width: auto;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body style="background-image: url('https://wallpaperaccess.com/full/840326.jpg')">
+        <img src="https://indoreinstitute.com/wp-content/uploads/2021/05/f1.png" alt="" class="image">
+        <div class="container ">
+        	<br>
+        	<br>
+        	<div class="jumbotron" style="padding: 10px;color: red ;background-color:rgba(0,0,0,0.3);">
+            <div class="row ">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-2"></div>
+                <div class="col-xs-5"><h3 class="text text-primary" style="color:green"><b>Enter your Bolt device credentials</b></h3></div>
+                
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <form id="credentialsForm" name="credentialsForm" action="1.php" method="GET">
+                	<div class="row">
+                		<div class="col-xs-3"></div>
+                    <div class="form-group col-xs-6">
+                    	<label for="apiKey">API Key</label>
+                      <input type="text" class="form-control" placeholder="Your API Key" name="apiKey" id="apiKey">
+                  </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs-3"></div>
+                    <div class="form-group col-xs-6">
+                    	<label for="id">Device Id</label>
+                      <input type="text" class="form-control" placeholder="Your Device ID" name="deviceId" id="id">
+                  </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group col-xs-5"></div>
+                    <div class="form-group col-xs-2">
+                        <button class="form-control btn btn-success btn-submit text-center" id="sub">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+            <br>
+            
+    </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    this.cursors = this.input.keyboard.createCursorKeys();
+
+    this.cursors.left;
+    this.cursors.right;
+    this.cursors.up;
+    this.cursors.down;
+    this.keyLeft = this.input.keyboard.addKey(Phaser.KeyCode.A);
+    this.keyRight = this.input.keyboard.addKey(Phaser.KeyCode.D);
+    this.keyUp = this.input.keyboard.addKey(Phaser.KeyCode.W);
+    this.keyDown = this.input.keyboard.addKey(Phaser.KeyCode.S);
+   
+    if (this.cursors.left.isDown || this.keyLeft.isDown) {
+        // move left
+    }
+    else if (this.cursors.right.isDown || this.keyRight.isDown) {
+        // move right
+    }
+    if (this.cursors.up.isDown || this.keyUp.isDown) {
+        // move up
+    }
+    else if (this.cursors.down.isDown || this.keyDown.isDown) {
+        // move down
+    }
+    
+
+
+</script>
+
+</html>

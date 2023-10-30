@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="load();">
+    <input id="tbInput" type="text" />
+    <div id="VirtualKey">
+        <input id="btn1" type="button" onclick="input(1);" />
+        <input id="btn2" type="button" onclick="input(2);" />
+        <input id="btn3" type="button" onclick="input(3);" />
+        <br />
+        <input id="btn4" type="button" onclick="input(4);" />
+        <input id="btn5" type="button" onclick="input(5);" />
+        <input id="btn6" type="button" onclick="input(6);" />
+        <br />
+        <input id="btn7" type="button" onclick="input(7);" />
+        <input id="btn8" type="button" onclick="input(8);" />
+        <input id="btn9" type="button" onclick="input(9);" />
+        <br />
+        <input id="btn0" type="button" onclick="input(0)" />
+        <input id="btnDel" type="button" value="Backspace" onclick="del();" />
+    </div>
+</body>
+<script>
+    // function input(e) {
+    //     var tbInput = document.getElementById("tbInput”);
+    //     tbInput.value = tbInput.value + e.value;
+    // }
+
+    // function del() {
+    //     var tbInput = document.getElementById("tbInput");
+    //     tbInput.value = tbInput.value.substr(0, tbInput.value.length - 1);
+    // }
+    // function load() {
+    //     var array = new Array();
+
+    //     while (array.length < 10) {
+    //         var temp = Math.round(Math.random() * 9);
+    //         if (!contain(array, temp)) {
+    //             array.push(temp);
+    //         }
+    //     }
+    //     for (i = 0; i < 10; i++) {
+    //         var btn = document.getElementById("btn" + i);
+    //         btn.value = array[i];
+    //     }
+        document.addEventListener('keydown', function(e) {
+    switch (e.keyCode) {
+        case 37:
+            alert('left');
+            break;
+        case 38:
+           alert('up');
+            break;
+        case 39:
+            alert('right');
+            break;
+        case 40:
+            alert('down');
+            break;
+    }
+});
+    }
+</script>
+
+</html>
