@@ -1,0 +1,37 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+  }
+  .slot{
+    display: dis;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 10rem;
+    height: 15rem;
+    
+
+  }
+  .content{
+    padding: 5% 30%;
+    width: 100%;
+  }
+
+.nav
+{
+    width: 300px;
+    margin: 0 30%;
+}
+.wrapper
+{
+display: flex;
+flex-wrap: nowrap;
+}
+.s2
+{
+  margin-left: 10px;
+}

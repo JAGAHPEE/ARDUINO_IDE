@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:">
+  <style>
+    body {
+      font-family: Cairo;
+      /* display: inline; */
+      /* margin: 0px auto; */
+      text-align: center;
+      background-color: #FAF9F6;
+    }
+
+
+    button {
+      background-color: #006699;
+      border: solid black;
+      border-radius: 10px;
+      color: white;
+      padding: 5px;
+      width: 100px;
+      text-decoration: none;
+      font-size: 0.7rem;
+      margin: 2px;
+      cursor: pointer;
+      text-align: center;
+      font-weight: bold;
+      transition: all 0.5s;
+      
+      
+    }
+
+    button:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .image {
+      height: 300px;
+      width: 100%;
+      /* position: ; */
+      align-items: center;
+      background-image: url(https://indoreinstitute.com/wp-content/uploads/2021/05/f1.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+
+    .small-underline {
+      width: 9rem;
+      height: .1rem;
+      background-color: #deaa86;
+      margin: 0 auto 1rem auto;
+    }
+
+    .big-underline {
+      max-width: 20rem;
+      height: .1rem;
+      background-color: #deaa86;
+    }
+
+    .button2 {
+      background-color: #555555;
+    }
+    table{
+      z-index: 10;
+      /* position: fixed ; */
+      /* display: flex; */
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      top: 0;
+      
+    }
+
+    .tablea{
+      justify-content: center;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <!-- <center> -->
+      <h1>Welcome to IIST Indore</h1>
+      <table class="tablea">
+        <tr>
+          <td></td>
+          <td><a href="#"><button id="button" onclick="setColor('button', '#101010')">FORWARD</button></a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="#"><button id="button" onclick="setColor('button', '#101010')">LEFT</button></a></td>
+          <td><a href="/stop" width="70px"><button>STOP</button></a></td>
+          <td><a href="/right"><button>RIGHT</button></a></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="/reverse"><button>REVERSE</button></a><td>
+          <td></td>
+        </tr>
+      </table>
+    
+    <br>
+    <div class=image></div>
+    <h1>Department of Electronics & Communication Engineering</h1>
+    <br>
+    <h2 class=title>Minor Project : COVID PROTECTIVE ROBOT:- PHASE II</h2>
+    <div class=underline>
+      <div class=small-underline></div>
+      <div class=big-underline></div>
+    </div>
+    <br>
+    <br>
+
+    <center>
+      <script>
+        function setColor(btn, color){
+            var count=1;
+            var property = document.getElementById(btn);
+            if (count == 0){
+                property.style.backgroundColor = "#FFFFFF"
+                count=1;        
+            }
+            else{
+                property.style.backgroundColor = "#7FFF00"
+                count=0;
+            }
+        
+        }
+        </script>
+</body>
+
+</html>
